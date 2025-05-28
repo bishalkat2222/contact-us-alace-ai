@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 const ContactForm = () => {
@@ -12,7 +13,7 @@ const ContactForm = () => {
     acceptTerms: false
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
     setFormData(prev => ({
       ...prev,
